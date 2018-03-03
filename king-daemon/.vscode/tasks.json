@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"type": "shell",
+	"tasks": [
+		/***    設置 build 任務    ***/
+		{
+			"label": "build",
+			"command": "go build -o ${workspaceRoot}/build/release/king-daemon",
+			"windows": {
+				"command": "go build -o ${workspaceRoot}/build/release/king-daemon.exe",
+			},
+			"problemMatcher":"$go",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"options": { "cwd": "${workspaceRoot}" }
+		},
+		/***    設置 run 任務    ***/
+		{
+			"label": "run",
+			"command": "${workspaceRoot}/build/release/king-daemon",
+			"windows": {
+				"command": "${workspaceRoot}/build/release/king-daemon.exe",
+			},
+			"problemMatcher":"$go",
+			"options": { "cwd": "${workspaceRoot}/build/bin" }
+		},
+	]
+}
