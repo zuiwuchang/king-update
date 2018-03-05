@@ -1,6 +1,0 @@
-{
-	"files.exclude": {
-		"**/init-go.sh": true,
-		"**/build/release": true,
-	}
-}

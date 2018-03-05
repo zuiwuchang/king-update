@@ -13,6 +13,10 @@
 # Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
 .glide/
 
-#go path
-bin/
-pkg/
+# project
+king-update
+king-update.exe
+build/
+package.jsonnet
+rules.jsonnet
+update.json
