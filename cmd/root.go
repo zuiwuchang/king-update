@@ -25,7 +25,6 @@ func initRoot() (cmd *cobra.Command) {
       github    -- https://github.com/zuiwuchang/king-update
    king's blog  -- http://blog.king011.com/
    king's email -- zuiwuchang@gmail.com`,
-		//匹配到 命令時執行的 代碼
 		Run: func(cmd *cobra.Command, args []string) {
 			if flagV {
 				fmt.Println(AppName, Version)

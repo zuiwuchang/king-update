@@ -110,7 +110,6 @@ func initInit() (cmd *cobra.Command) {
    package.jsonnet  --  package info
    rules.jsonnet    --  auto update rules
 `,
-		//匹配到 命令時執行的 代碼
 		Run: func(cmd *cobra.Command, args []string) {
 			exec.Do(templateFile)
 			fmt.Println(`success : 

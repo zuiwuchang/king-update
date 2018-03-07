@@ -1,0 +1,15 @@
+/***	基礎功能	***/
+syntax = "proto3";
+
+package protoc;
+
+
+//基礎服務器
+service ServiceBasic{
+	//測試 到 服務器 是否 暢通
+	rpc Ping(BasicPingRequest) returns (BasicPingReply) {}
+}
+message BasicPingRequest{
+}
+message BasicPingReply{
+}

@@ -100,7 +100,6 @@ func initCreate() (cmd *cobra.Command) {
 		Long: `create package file  --  update.jsonnet
 	update.jsonnet  --  auto update files and hash
 `,
-		//匹配到 命令時執行的 代碼
 		Run: func(cmd *cobra.Command, args []string) {
 			exec.Do()
 			fmt.Println(`success : 
